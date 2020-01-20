@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class PathMatchers {
 
-  private static ArrayList<String> pathList = new ArrayList(Arrays. asList("path", "pad", "padt", "padth", "patd"));
+  private static ArrayList<String> pathList = new ArrayList(Arrays. asList("path", "pad", "padt", "padth", "patd", "pat"));
 
   public static void equalsPath(Object path) {
     checkForPath(path);
