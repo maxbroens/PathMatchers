@@ -16,11 +16,17 @@ public class PathMatchers {
   }
 
   private static void checkForPath(Object path) {
+    boolean throwError = false;
+
     if (path instanceof String) {
       if (!pathList.contains(((String) path).toLowerCase())) {
-        throw new IsNotPathError("Is not padtdth!");
+        throwError = true;
       }
+    } else {
+      throwError = true;
     }
+
+    if (throwError) throw new IsNotPathError("Is not padtdth!");
   }
 
 }
